@@ -1,0 +1,122 @@
+body {
+    transition: background-color 0.8s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    background-color: #e6f2ff;
+    color: #333;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    width: 95%;
+    max-width: 700px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #007bff;
+    margin-bottom: 10px;
+    font-size: 2.2em;
+}
+
+p {
+    margin-bottom: 25px;
+    line-height: 1.6;
+    color: #555;
+}
+
+form {
+    text-align: left;
+}
+
+.campo-grupo {
+    margin-bottom: 20px;
+}
+
+.campo-grupo label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #444;
+}
+
+.campo-grupo input[type="text"],
+.campo-grupo input[type="number"],
+.campo-grupo select,
+.campo-grupo textarea {
+    width: calc(100% - 20px);
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    box-sizing: border-box; 
+}
+
+.campo-grupo input[type="radio"],
+.campo-grupo input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.campo-grupo input[type="radio"] + label,
+.campo-grupo input[type="checkbox"] + label {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: normal; 
+}
+
+.campo-grupo textarea {
+    resize: vertical; 
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s, transform 0.1s;
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
+#btn-adotar {
+    background-color: #28a745; 
+    color: white;
+    margin-right: 15px;
+}
+
+#btn-adotar:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+#btn-reset-form {
+    background-color: #6c757d; 
+    color: white;
+}
+
+#btn-reset-form:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+}
+
+.mensagem-oculta {
+    display: none;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
