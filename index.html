@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adote um Pet! 🐾</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>🐾 Adote um Amigo Peludo! 🐾</h1>
+
+        <p>Preencha as informações do animal que você gostaria de adotar e personalize a página!</p>
+
+
+
+        <form id="form-adocao">
+
+            <section class="campo-grupo">
+                <label for="tipo-animal">Tipo de Animal:</label>
+
+                <select id="tipo-animal" name="tipo-animal">
+                    <option value="">Selecione</option>
+                    <option value="cachorro">Cachorro</option>
+                    <option value="gato">Gato</option>
+                    <option value="passaro">Pássaro</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+            </section>
+
+            <section class="campo-grupo">
+                <label for="nome-animal">Nome Sugerido:</label>
+                <input type="text" id="nome-animal" name="nome-animal" placeholder="Ex: Fido, Mia, Thor">
+
+            </section>
+
+
+
+            <section class="campo-grupo">
+
+                <label for="idade-animal">Idade (anos):</label>
+                <input type="number" id="idade-animal" name="idade-animal" min="0" max="20" value="1">
+
+            </section>
+
+
+
+            <section class="campo-grupo">
+
+                <label>Porte do Animal:</label>
+
+                <div>
+                    <input type="radio" id="porte-pequeno" name="porte" value="pequeno">
+                    <label for="porte-pequeno">Pequeno</label>
+                    <input type="radio" id="porte-medio" name="porte" value="medio" checked>
+                    <label for="porte-medio">Médio</label>
+                    <input type="radio" id="porte-grande" name="porte" value="grande">
+                    <label for="porte-grande">Grande</label>
+                </div>
+
+            </section>
+
+            <section class="campo-grupo cor-animal-grupo">
+
+    <label>Cor Predominante do Animal:</label>
+
+    <div>
+
+        <input type="radio" id="cor-preto" name="cor-animal" value="preto">
+        <label for="cor-preto">Preto</label>
+        <input type="radio" id="cor-branco" name="cor-animal" value="branco">
+        <label for="cor-branco">Branco</label>
+        <input type="radio" id="cor-marrom" name="cor-animal" value="marrom">
+        <label for="cor-marrom">Marrom</label>
+        <input type="radio" id="cor-caramelo" name="cor-animal" value="caramelo">
+        <label for="cor-caramelo">Caramelo</label>
+        <input type="radio" id="cor-cinza" name="cor-animal" value="cinza">
+        <label for="cor-cinza">Cinza</label>
+    </div>
+
+</section>
+
+            <section class="campo-grupo">
+                <label for="observacoes">Observações Adicionais:</label>
+                <textarea id="observacoes" name="observacoes" rows="4" laceholder="Alguma característica especial, personalidade, etc."></textarea>
+            </section>
+
+            <button type="submit" id="btn-adotar">Quero Adotar!</button>
+            <button type="button" id="btn-reset-form">Limpar Formulário</button>
+        </form>
+
+        <div id="mensagem-sucesso" class="mensagem-oculta">
+            🎉 Parabéns! Seu interesse por <span id="animal-nome-final"></span> foi registrado! Entraremos em contato.
+        </div>
+    </main>
+
+
+
+    <script src="script.js"></script>
+
+    <form action="indexx.php" ...></form>
+</body>
+
+</html>
